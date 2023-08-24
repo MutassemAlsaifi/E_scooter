@@ -1,0 +1,205 @@
+/* style for hero main section start  */
+main {
+  min-height: 88vh;
+  padding: 12vh 0 0 0;
+}
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary_color);
+}
+main .container .left_content {
+  display: grid;
+  gap: 3rem;
+  width: fit-content;
+}
+main .container .left_content h1 {
+  font-family: "Ubuntu-bold";
+  font-size: 6.8rem;
+  color: var(--secondary_color);
+  padding-bottom: 5rem;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+}
+main .container .left_content h1::after {
+  content: "";
+  background-color: var(--secondary_color);
+  height: 0.5rem;
+  width: 55%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main .container .left_content span {
+  font-family: "Ubuntu-Light";
+}
+main .container .left_content p {
+  font-family: "Ubuntu-Regular";
+  font-size: 1.5rem;
+}
+main .container .left_content .footer_main {
+  display: flex;
+  gap: 3rem;
+}
+main .container .left_content .footer_main .Buy {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .container .left_content .footer_main .Buy i {
+  background-color: var(--secondary_color);
+  color: var(--main_color);
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+main .container .left_content .footer_main .Buy h3 {
+  font-family: "Ubuntu-Medium";
+  font-size: 1.4rem;
+}
+main .container .left_content .footer_main .video_text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  font-family: "Ubuntu-Medium";
+}
+main .container .left_content .footer_main .video_text .rotate_text {
+  transform-origin: center;
+  animation: rotate 3s linear infinite;
+}
+main .container .left_content .footer_main .video_text p {
+  width: 80px;
+  line-height: 3rem;
+}
+main .container .right_content {
+  width: 60%;
+  position: relative;
+}
+.hero_img {
+  position: relative;
+}
+.hero_img::after {
+  content: "";
+  display: inline-block;
+  width: 500px;
+  height: 85%;
+  background-image: url(../imgs/main/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -0%;
+  top: 10%;
+  z-index: -100;
+}
+main .hero_img {
+  overflow: hidden;
+}
+main .hero_img img {
+  width: 100%;
+}
+main .container .right_content .counter {
+  position: absolute;
+  bottom: -5rem;
+  right: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main .container .right_content .counter span {
+  font-size: 10rem;
+  user-select: none;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--secondary_color);
+}
+main .container .right_content .counter .pre_next {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2rem;
+  position: relative;
+  border: solid 1px var(--secondary_color);
+}
+main .container .right_content .counter .pre_next::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--secondary_color);
+  left: calc(50% - 1px);
+}
+main .container .right_content .counter .pre_next i {
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--secondary_color);
+}
+
+/* for responsive main section  */
+@media (max-width: 1200px) {
+  main {
+    padding-bottom: 5rem;
+  }
+  main .container {
+    flex-wrap: wrap-reverse;
+    gap: 15rem;
+  }
+  main .container .right_content {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  main .container .right_content .counter {
+    right: 50%;
+    bottom: -10rem;
+    transform: translateX(50%);
+  }
+  .hero_img::after {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .left_content {
+    width: 100%;
+  }
+  main .container .left_content h1 {
+    margin: auto;
+    text-align: center;
+  }
+  main .container .left_content > p {
+    width: fit-content;
+    margin: auto;
+  }
+  main .container .left_content .footer_main {
+    width: fit-content;
+    margin: auto;
+  }
+}
+/* style for hero main section end  */
+/* classes for js  */
+.trsanform_x {
+  transform: translateX(100%);
+}
+
+/*  rotate the rotate text in the main */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

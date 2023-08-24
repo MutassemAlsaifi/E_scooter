@@ -1,0 +1,31 @@
+@import url(general.css);
+@import url(header.css);
+@import url(main.css);
+@import url(features.css);
+@import url(Product_Information.css);
+@import url(Efficiency_motor.css);
+@import url(Accessories.css);
+@import url(cargo_rack.css);
+@import url(gallery.css);
+@import url(color.css);
+@import url(testimonials.css);
+@import url(subscribe.css);
+@import url(footer.css);
+
+@import url(loading.css);
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}

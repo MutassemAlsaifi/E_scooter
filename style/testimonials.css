@@ -1,0 +1,132 @@
+section.testimonials {
+  padding: 20rem 0 5rem 0;
+  overflow: hidden;
+  background-color: var(--main_color);
+  color: var(--secondary_color);
+}
+section.testimonials .container {
+  width: 80%;
+  overflow: hidden;
+}
+section.testimonials .container .flex_div {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+section.testimonials .header_content {
+  text-align: center;
+  font-family: "Ubuntu-Bold";
+  font-size: 3.4rem;
+  transition: 2s;
+  padding: 5rem 0 10rem;
+  /* opacity: 0; */
+  transform: translateY(0);
+}
+section.testimonials .container .box {
+  width: 350px;
+  padding: 3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.354);
+  display: grid;
+  gap: 2rem;
+  color: #fafafa;
+  color: var(--light_black);
+  flex-grow: 1;
+  transition: 1s;
+  opacity: 1;
+}
+
+section.testimonials .container .box p {
+  font-size: 2rem;
+  font-family: "Ubuntu-Regular";
+  text-align: justify;
+}
+section.testimonials .container .box .footer_box {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+  transform: translateX(0);
+}
+section.testimonials .container .box .jop p {
+  font-size: 1.3rem;
+  font-family: "Ubuntu-Medium";
+}
+section.testimonials .container .box .jop span {
+  font-size: 1.1rem;
+  font-family: "Ubuntu-Regular";
+}
+section.testimonials .container .box .opinion i {
+  color: #fe8b75;
+}
+.header_content_box {
+  display: grid;
+  gap: 2rem;
+}
+
+section.testimonials .container .active {
+  box-shadow: 2px 5px 20px var(--secondary_color);
+  border: transparent;
+}
+
+section.testimonials .next_pre {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5rem;
+}
+section.testimonials .next_pre i {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 0.1rem solid var(--secondary_color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+section.testimonials .next_pre :first-child {
+  transform: rotate(-180deg);
+}
+section.testimonials .box .opinion {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+section.testimonials .box .opinion i {
+  transition: 1s;
+  cursor: pointer;
+}
+section.testimonials .box .opinion :hover {
+  filter: drop-shadow(0 0 2px var(--secondary_color));
+}
+
+@media (max-width: 1100px) {
+  section.testimonials {
+    padding: 30rem 0 5rem;
+  }
+}
+
+/* this classes for js  */
+.backgroung {
+  background-color: #fe2c02;
+}
+.drop-shadow {
+  filter: drop-shadow(0 0 2px var(--secondary_color));
+}
+section.testimonials .next_pre .black_color {
+  background-color: var(--light_black);
+  color: var(--white);
+}
+section.testimonials .next_pre .transparent_color {
+  color: var(--light_black);
+}
+.transformX_box {
+  transform: translateX(120%);
+  opacity: 0 !important;
+}

@@ -1,0 +1,23 @@
+/* start style Efficiency_motor section  */
+section.Efficiency_motor {
+  background-color: var(--main_color);
+}
+section.Efficiency_motor .container .header_content {
+  text-align: center;
+  font-family: "Ubuntu-Bold";
+  font-size: 3.4rem;
+  transition: 2s;
+  transform: translateY(0px);
+  opacity: 0;
+}
+section.Efficiency_motor .container .header_content p {
+  font-family: "Ubuntu-Bold";
+  font-family: "Ubuntu-Regular";
+  font-size: 1.4rem;
+  padding-top: 3rem;
+}
+
+section.Efficiency_motor .container img {
+  width: 100%;
+}
+/* end style Efficiency_motor section  */

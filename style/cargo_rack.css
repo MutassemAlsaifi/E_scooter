@@ -1,0 +1,77 @@
+section.cargo_rack {
+  padding: 10rem 0 5rem;
+  opacity: 0;
+  background-color: var(--main_color);
+  color: var(--secondary_color);
+}
+section.cargo_rack .container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.cargo_rack .container .right_content {
+  display: grid;
+  align-content: start;
+  gap: 3rem;
+  overflow: hidden;
+}
+section.cargo_rack .container .right_content {
+  font-size: 1.4rem;
+  font-family: "Ubuntu-Regular";
+}
+section.cargo_rack .container .right_content .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 1s;
+}
+section.cargo_rack .container .right_content > h2 {
+  font-family: "Ubuntu-Bold";
+  font-size: 3.5rem;
+}
+section.cargo_rack .container .leftContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+section.cargo_rack .container .leftContent :nth-child(2) {
+  margin-left: 5rem;
+}
+@media (max-width: 568px) {
+  section.cargo_rack .container {
+    flex-wrap: wrap;
+  }
+  section.cargo_rack .container .leftContent {
+    flex-grow: 1;
+  }
+  section.cargo_rack .container .right_content {
+    flex-grow: 1;
+    margin-top: 5rem;
+    display: grid;
+    place-items: center;
+  }
+  section.cargo_rack .container .leftContent :nth-child(2) {
+    margin-left: 10rem;
+  }
+}
+section.cargo_rack .footer_cargo_rack {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+section.cargo_rack .footer_cargo_rack button {
+  width: 50%;
+  padding: 3.5rem 0;
+  border: solid 0.2rem var(--box_shadow_color);
+  margin: 5rem 0 0 0;
+  font-size: 2rem;
+  font-family: "Ubuntu-Bold";
+  transition: 1s;
+}
+section.cargo_rack .footer_cargo_rack button:hover {
+  background-color: var(--secondary_color);
+  color: var(--main_color);
+}

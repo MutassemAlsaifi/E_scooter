@@ -1,0 +1,73 @@
+/* style for all elements  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* style for the html elements  */
+:root {
+  font-size: 10px;
+  /* --white: #ffffff;
+  --light_white: #eae8f3;
+  --light_black: #42454a;
+  --light_gray: #dbdbdb; */
+
+  --main_color: #ffffff;
+  --sub_main_color: #eae8f3;
+  --secondary_color: #42454a;
+  --sub_secondary_color: #dbdbdb;
+  --box_shadow_color: rgb(66, 69, 74, 0.3);
+  --dark:rgba(0, 0, 0, 0.7);
+}
+.dark_mode {
+  --main_color: #000000;
+  --sub_main_color: #424145;
+  --secondary_color: #cfd2d8;
+  --sub_secondary_color: #4c4747;
+  --box_shadow_color: rgb(207, 210, 216, 0.3);
+  --dark:rgb(255, 255, 255,0.7);
+
+}
+body {
+  overflow: hidden;
+}
+
+/* for all container in the pages */
+.container {
+  width: 90%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+button {
+  color: inherit;
+  background-color: inherit;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+img {
+  user-select: none;
+}
+span {
+  font-family: "Ubuntu-Regular";
+}
+
+/* for all header section that have a header text  */
+.header_content {
+  text-align: center;
+  font-family: "Ubuntu-Bold";
+  font-size: 3.4rem;
+  transition: 2s;
+  padding: 5rem 0;
+  opacity: 0;
+  transform: translateY(0);
+  color: var(--secondary_color);
+}

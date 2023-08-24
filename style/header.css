@@ -1,0 +1,166 @@
+/* for the top header style  start*/
+header {
+  height: 12vh;
+  display: grid;
+  place-items: center;
+  border-bottom: 2px var(--main_color) solid;
+  font-family: "Ubuntu-Regular";
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav.nav_links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  transition: 1s;
+}
+header .container nav.nav_links a {
+  color: var(--secondary_color);
+
+}
+header .container nav.nav_links a.more_option {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  padding: 2rem 0.5rem;
+}
+/* this is div for the right two button  */
+header .container .entry_interfaces {
+  color: var(--secondary_color);
+  display: flex;
+  gap: 1rem;
+}
+header .container .entry_interfaces .active {
+  color: var(--main_color);
+  background-color: var(--secondary_color);
+}
+button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+header .container .fa-bars {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  color: var(--secondary_color);
+}
+header .container .locate_bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* for responsive start */
+@media (max-width: 768px) {
+  header .container .fa-bars {
+    display: block;
+  }
+
+  header .container nav.nav_links {
+      display: grid !important;
+      justify-items: center;
+      gap: 20rem;
+      padding: 3rem;
+      width: 100%;
+      position: absolute;
+      top: 15vh;
+      right: 0;
+      background-color:var(--dark) ;
+      backdrop-filter: blur(30px);
+      gap: 0;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: 1s;
+      z-index: 99;
+    }
+    header .container nav.nav_links.active_nav{
+      height: 50vh;
+      opacity: 1;
+      
+    }
+    header .container nav.nav_links.active_nav a{
+      color: var(--main_color) !important;
+    }
+  }
+
+/* for responsive end */
+
+/* --------------------------------------------------------------------------------------- */
+
+/* this classes for js  */
+
+/* this for product menu  */
+.menu {
+  color: var(--main_color);
+  display: grid;
+  transition: 1s ease-in-out;
+  position: absolute;
+  top: 5rem;
+}
+.menu span {
+  background-color: var(--secondary_color);
+  width: 300%;
+  height: 5rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: 1s;
+}
+.menu span:hover {
+  background-color: var(--secondary_color);
+  color: var(--main_color);
+}
+.modes {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.modes > * {
+  cursor: pointer;
+}
+.fa-moon {
+  display: block;
+}
+.fa-lightbulb {
+  display: none;
+}
+/* this class for js to add and remove for the nav for bar icon  */
+.transform_nav {
+  display: flex !important;
+  flex-direction: column;
+  background-color: var(--secondary_color);
+  color: #fff;
+  width: 30%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+  gap: 2rem;
+  z-index: 100;
+}
+/* this class for js to add and remove for the menu or any element */
+.hide {
+  display: none !important;
+}
+/* this class for js to transform_icon for more icon  */
+.transform_icon {
+  order: -1;
+  transform: rotate(180deg);
+}
+.transform_menu {
+  left: -150%;
+  top: 0;
+}
+/* for the top header style  end*/
