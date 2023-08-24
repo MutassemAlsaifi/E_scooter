@@ -8,10 +8,6 @@ Welcome to the Show Scooter Front-End GitHub repository! This project features a
 - Interactive animations powered by JavaScript.
 - Responsive design for various screen sizes.
 
-## Installation
-
- Clone the repository: `git clone https://github.com/your-username/show-scooter-front-end.git`
-
 
 ## Usage
 
