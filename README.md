@@ -10,9 +10,8 @@ Welcome to the Show Scooter Front-End GitHub repository! This project features a
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/show-scooter-front-end.git`
-2. Navigate to the project directory: `cd show-scooter-front-end`
-3. Open `index.html` in your browser to view the presentation.
+ Clone the repository: `git clone https://github.com/your-username/show-scooter-front-end.git`
+
 
 ## Usage
 
